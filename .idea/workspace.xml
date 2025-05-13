@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBoot Application Started inside Docker Container!">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KpjavaspringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KpjavaspringbootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kpjavaspringboot/KpjavaspringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kpjavaspringboot/KpjavaspringbootApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT-exec.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT-exec.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,18 +19,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "KPasumarthy"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;KPasumarthy&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/KPasumarthy/KPJavaSpringBootDocker.git",
-    "accountId": "793a2de6-ffa0-4e6d-a0c2-86e31ea11cf0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/KPasumarthy/KPJavaSpringBootDocker.git&quot;,
+    &quot;accountId&quot;: &quot;793a2de6-ffa0-4e6d-a0c2-86e31ea11cf0&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -46,25 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.KPFibonassi.executor": "Run",
-    "Application.KpjavaspringbootApplication.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Maven.kpjavaspringboot [clean,install,compile].executor": "Run",
-    "Maven.kpjavaspringboot [package...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "kpDevDocker",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Projects/IdeaProjects/kpjavaspringboot"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.KPFibonassi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KpjavaspringbootApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.kpjavaspringboot [clean,install,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.kpjavaspringboot [package...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kpDevDocker&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/IdeaProjects/kpjavaspringboot&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean install compile" />
       <command value=" mvn package spring-boot:repackage" />
+      <command value="mvn clean install compile" />
       <command value="mvn package spring-boot:repackage" />
     </option>
   </component>
