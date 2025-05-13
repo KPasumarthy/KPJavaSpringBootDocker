@@ -4,12 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="" />
+    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBoot Application Started inside Docker Container!">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KpjavaspringbootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KpjavaspringbootApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/kpjavaspringboot/KpjavaspringbootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kpjavaspringboot/KpjavaspringbootApplication.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "KPasumarthy"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/KPasumarthy/KPJavaSpringBootDocker.git",
+    "accountId": "793a2de6-ffa0-4e6d-a0c2-86e31ea11cf0"
+  }
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -28,12 +48,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.KPFibonassi.executor": "Run",
     "Application.KpjavaspringbootApplication.executor": "Run",
     "Docker.Dockerfile.executor": "Run",
     "Maven.kpjavaspringboot [clean,install,compile].executor": "Run",
     "Maven.kpjavaspringboot [package...].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "kpDevDocker",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Projects/IdeaProjects/kpjavaspringboot"
   }
@@ -45,7 +68,20 @@
       <command value="mvn package spring-boot:repackage" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Application.KpjavaspringbootApplication">
+    <configuration name="KPFibonassi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonassi" />
+      <module name="kpjavaspringboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpjavaspringboot.interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KpjavaspringbootApplication" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="ms-17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -80,8 +116,14 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.KpjavaspringbootApplication" />
+      <item itemvalue="Application.KPFibonassi" />
+      <item itemvalue="Docker.Dockerfile" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.KPFibonassi" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
@@ -95,6 +137,17 @@
       <updated>1747073272653</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kpjavaspringboot$KpjavaspringbootApplication.ic" NAME="KpjavaspringbootApplication Coverage Results" MODIFIED="1747094016563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
