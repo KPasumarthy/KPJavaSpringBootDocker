@@ -6,7 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBoot Application Started inside Docker Container CRUD RESTController!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/interview/KPFibonassi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/interview/KPFibonassi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/KpjavaspringbootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/KpjavaspringbootApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT-exec.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT-exec.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/kpjavaspringboot-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kpjavaspringboot.KpjavaspringbootApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.kpjavaspringboot.KpjavaspringbootApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.kpjavaspringboot.KpjavaspringbootApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.kpjavaspringboot.KpjavaspringbootApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,21 +53,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.KPFibonassi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.KpjavaspringbootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kpjavaspringboot [clean,install,compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kpjavaspringboot [package...].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;kpDevDocker&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/IdeaProjects/kpjavaspringboot&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.KPFibonassi.executor": "Run",
+    "Application.KpjavaspringbootApplication.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "JUnit.KPJavaSpringBootApplicationTests.contextLoads.executor": "Run",
+    "Maven.kpjavaspringboot [clean,install,compile].executor": "Run",
+    "Maven.kpjavaspringboot [package...].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.KPFibonassiTest.executor": "Run",
+    "git-widget-placeholder": "kpDevDocker",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Projects/IdeaProjects/kpjavaspringboot"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value=" mvn package spring-boot:repackage" />
@@ -66,7 +77,7 @@
       <command value="mvn package spring-boot:repackage" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.KpjavaspringbootApplication">
+  <component name="RunManager" selected="TestNG.KPFibonassiTest">
     <configuration name="KPFibonassi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonassi" />
       <module name="kpjavaspringboot" />
@@ -89,6 +100,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="KPJavaSpringBootApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kpjavaspringboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpjavaspringboot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kpjavaspringboot" />
+      <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.KPJavaSpringBootApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="KPJavaSpringBoot" />
       <method v="2">
@@ -99,6 +126,23 @@
       <module name="KPJavaSpringBoot" />
       <option name="filePath" />
       <method v="2" />
+    </configuration>
+    <configuration name="KPFibonassiTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kpjavaspringboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpjavaspringboot.interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kpjavaspringboot.interview" />
+      <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonassiTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
@@ -118,10 +162,14 @@
       <item itemvalue="Application.KpjavaspringbootApplication" />
       <item itemvalue="Application.KPFibonassi" />
       <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="JUnit.KPJavaSpringBootApplicationTests.contextLoads" />
+      <item itemvalue="TestNG.KPFibonassiTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.KPFibonassiTest" />
         <item itemvalue="Application.KPFibonassi" />
+        <item itemvalue="JUnit.KPJavaSpringBootApplicationTests.contextLoads" />
         <item itemvalue="Docker.Dockerfile" />
       </list>
     </recent_temporary>
@@ -142,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747169871668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="KP : KPJavaSpringBoot Application Started inside Docker Container CRUD RESTController!">
+      <option name="closed" value="true" />
+      <created>1747171208707</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747171208707</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,7 +206,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="kpDevDocker" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
