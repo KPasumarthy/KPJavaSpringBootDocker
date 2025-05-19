@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPFibonassi Series &amp; Test Cases Added!">
+    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : Fibonassi renamed to Fibonacci!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/interview/KPFibonassi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/interview/KPFibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/interview/KPFibonassiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/interview/KPFibonassiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/interview/KPFibonassiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/kpjavaspringboot/interview/KPFibonacciTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.KPFibonassi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.KpjavaspringbootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.KPJavaSpringBootApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kpjavaspringboot [clean,install,compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.kpjavaspringboot [package...].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;TestNG.KPFibonassiTest.executor&quot;: &quot;Run&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;kpDevDocker&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Projects/IdeaProjects/kpjavaspringboot&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.KPFibonassi.executor": "Run",
+    "Application.KpjavaspringbootApplication.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "JUnit.KPJavaSpringBootApplicationTests.contextLoads.executor": "Run",
+    "Maven.kpjavaspringboot [clean,install,compile].executor": "Run",
+    "Maven.kpjavaspringboot [package...].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.KPFibonacciTest.executor": "Run",
+    "TestNG.KPFibonassiTest.executor": "Run",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "kpDevDocker",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Projects/IdeaProjects/kpjavaspringboot",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value=" mvn package spring-boot:repackage" />
@@ -74,7 +74,7 @@
       <command value="mvn package spring-boot:repackage" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.KPFibonassiTest">
+  <component name="RunManager" selected="TestNG.KPFibonacciTest">
     <configuration name="KPFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonacci" />
       <module name="kpjavaspringboot" />
@@ -124,6 +124,23 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="KPFibonacciTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="kpjavaspringboot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kpjavaspringboot.interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kpjavaspringboot.interview" />
+      <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonacciTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KPFibonassiTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="kpjavaspringboot" />
       <extension name="coverage">
@@ -160,10 +177,12 @@
       <item itemvalue="Application.KPFibonacci" />
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="JUnit.KPJavaSpringBootApplicationTests.contextLoads" />
+      <item itemvalue="TestNG.KPFibonacciTest" />
       <item itemvalue="TestNG.KPFibonassiTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.KPFibonacciTest" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="TestNG.KPFibonassiTest" />
         <item itemvalue="JUnit.KPJavaSpringBootApplicationTests.contextLoads" />
@@ -203,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747321510110</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="KP : Fibonassi renamed to Fibonacci!">
+      <option name="closed" value="true" />
+      <created>1747669317629</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747669317629</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="KP : KPJavaSpringBoot Application Started inside Docker Container CRUD RESTController!" />
     <MESSAGE value="KP : KPFibonassi Series &amp; Test Cases Added!" />
-    <option name="LAST_COMMIT_MESSAGE" value="KP : KPFibonassi Series &amp; Test Cases Added!" />
+    <MESSAGE value="KP : Fibonassi renamed to Fibonacci!" />
+    <option name="LAST_COMMIT_MESSAGE" value="KP : Fibonassi renamed to Fibonacci!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/kpjavaspringboot$KpjavaspringbootApplication.ic" NAME="KpjavaspringbootApplication Coverage Results" MODIFIED="1747094016563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

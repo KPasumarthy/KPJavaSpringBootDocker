@@ -39,7 +39,7 @@ public class KPFibonacci {
                 /// KP : Fibonacci N=20
     public static void createFibonacciSeries(){
         ////KP : Print fibonacci
-        int[] Fibonassi = {1, 1, 2, 3,  5, 8, 13, 21};
+        int[] Fibonacci = {1, 1, 2, 3,  5, 8, 13, 21};
         System.out.print("KP : KPMain - com.kpjavaspringboot : main() :  Fibonacci Series  = [ " );
         int n = 20;
         int  first=0, second = 1;
