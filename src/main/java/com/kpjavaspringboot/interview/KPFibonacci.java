@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 
-public class KPFibonassi {
+public class KPFibonacci {
 
     private static Logger logger = LoggerFactory.getLogger(KpjavaspringbootApplication.class);
 
