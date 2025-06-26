@@ -13,3 +13,6 @@ ADD  target/kpjavaspringboot-0.0.1-SNAPSHOT.jar kpjavaspringboot.jar
 ENTRYPOINT ["java", "-jar", "kpjavaspringboot.jar"]
 
 
+## Stage 3 : Run following commands inside the Docker Terminal
+# docker build -t kpjavaspringbootapplication .
+# docker run -d -p 8181:8080 --name kpjavaspringbootapplication kpjavaspringbootapplication
