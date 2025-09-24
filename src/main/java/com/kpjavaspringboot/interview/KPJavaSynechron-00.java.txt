@@ -1,0 +1,304 @@
+package com.kpjavaspringboot.interview;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.AsyncConfigurer;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+
+import java.util.Date;
+import java.util.concurrent.*;
+
+
+import java.time.LocalDateTime;
+import java.util.HashMap;
+
+public class KPJavaSynechron {
+
+    private static Logger logger = LoggerFactory.getLogger(KPJavaSynechron .class);
+
+    public static void main(String[] args) {
+        /*
+            Problem Statement: Real-Time Market Data Aggregator
+            You are tasked with implementing a real-time market data aggregator for a trading platform.
+            The system receives price updates for various financial instruments
+            (e.g., stocks, forex, bonds) and must efficiently process and aggregate the data to provide the latest price for each instrument.
+            Requirements
+            1. Input Stream:
+               - Simulate an input stream where price updates are generated continuously for different instruments.
+               - Each update contains:
+                 - Instrument ID (String)
+                 - Timestamp (long, in nanoseconds)
+                 - Price (double)
+            2. Aggregator:
+               - Maintain the latest price for each instrument in a thread-safe manner.
+               - Discard updates that are out-of-order (i.e., older than the current latest timestamp for that instrument).
+            3. Query System:
+               - Provide a method `getLatestPrice(String instrumentId)` that retrieves the latest price for a given instrument.
+               - Ensure the query performance is optimized for low latency.
+            4. Concurrency:
+               - Assume the input stream is processed by multiple threads.
+               - Ensure thread safety without compromising performance.
+            Deliverables:
+            1. Implement the `MarketDataAggregator` class with the following methods:
+               - `void onPriceUpdate(String instrumentId, long timestamp, double price)`
+               - `double getLatestPrice(String instrumentId)`
+               - Optionally, implement a method to simulate a continuous input stream for testing.
+            Example Input and Output
+            Input:
+            java
+            MarketDataAggregator aggregator = new MarketDataAggregator();
+            aggregator.onPriceUpdate("AAPL", 10000001L, 150.0);
+            aggregator.onPriceUpdate("AAPL", 10000003L, 151.0);
+            aggregator.onPriceUpdate("AAPL", 10000002L, 149.0); // Out-of-order
+         */
+        // KP : Debug Print
+
+
+        System.out.println("KP : KPJavaSynechron - com.kpjavaspringboot : main() : " + LocalDateTime.now());
+        //MarketDataAggregator aggregator = new MarketDataAggregator();
+        //aggregator.onPriceUpdate("AAPL", 10000001L, 150.0);
+        //aggregator.onPriceUpdate("AAPL", 10000003L, 151.0);
+        //aggregator.onPriceUpdate("AAPL", 10000002L, 149.0); // Out-of-order
+
+        //Instrument instrument = aggregator.onPriceUpdate("AAPL", 10000001L, 150.0);
+        //System.out.println("KP : KPJavaSynechron : instrument - id : " + instrument.id +
+        //                                               " timestamp : " + instrument.timestamp +
+        //                                                   " price : " + instrument.price +
+        //                                           " LocalDateTime :  "  + LocalDateTime.now());
+        //System.out.println("KP : KPJavaSynechron - com.kpjavaspringboot : main() : " + LocalDateTime.now());
+
+        //
+        //        instrument = aggregator.onPriceUpdate("AAPL", 10000003L, 151.0);
+        //        System.out.println("KP : KPJavaSynechron : instrument - id : " + instrument.id +
+        //                " timestamp : " + instrument.timestamp +
+        //                " price : " + instrument.price +
+        //                " LocalDateTime :  "  + LocalDateTime.now());
+        //        //System.out.println("KP : KPJavaSynechron - com.kpjavaspringboot : main() : " + LocalDateTime.now());
+        //
+        //
+        //        instrument = aggregator.onPriceUpdate("AAPL", 10000002L, 149.0);
+        //        System.out.println("KP : KPJavaSynechron : instrument - id : " + instrument.id +
+        //                " timestamp : " + instrument.timestamp +
+        //                " price : " + instrument.price +
+        //                " LocalDateTime :  "  + LocalDateTime.now());
+        //        //System.out.println("KP : KPJavaSynechron - com.kpjavaspringboot : main() : " + LocalDateTime.now());
+        //
+
+        ///System.out.println("KP : KPJavaSynechron : KPJavaScheduler : ScheduledExecutorService : " + LocalDateTime.now());
+        //logger.info("KP : KPJavaSynechron : KPJavaScheduler ScheduledExecutorService : " + LocalDateTime.now());
+        //KPJavaScheduler.beepForAnHour();
+
+        ///System.out.println("KP : KPJavaSynechron : KPAsyncConfig :  " + LocalDateTime.now());
+        //logger.info("KP : KPJavaSynechron : KPAsyncConfig  : " + LocalDateTime.now());
+        //KPAsyncConfig  kpMyAsyncConfig = new KPAsyncConfig();
+        //Executor executor =   kpMyAsyncConfig.getAsyncExecutor();;
+
+        ///System.out.println("KP : KPJavaSynechron : KPJavaStockPrice : ScheduledExecutorService : " + LocalDateTime.now());
+        logger.info("KP : KPJavaSynechron : KPJavaStockPrice ScheduledExecutorService : " + LocalDateTime.now());
+        KPJavaStockPrice.executeStockPriceForAnHour();
+
+    }
+
+    public static class Instrument {
+
+        @Setter
+        @Getter
+        private String id;
+
+        @Setter
+        @Getter
+        private long timestamp;
+
+        @Setter
+        @Getter
+        private double price;
+
+        Instrument( String id, long timestamp, double price) {
+            this.id = id;
+            this.timestamp = timestamp;
+            this.price = price;
+        }
+
+    }
+
+    public static class MarketDataAggregator {
+        //HashMap hm = new HashMap< String tag, double price>;
+        //HashMap<String, Double> symbol = new HashMap<String, Double>();
+        //HashMap<String, Instrument> symbol = new HashMap<String, Instrument>();
+        Instrument instrument = new Instrument( "AAPL", 10000001L, 145.67);
+
+        public Instrument onPriceUpdate(String id, long timestamp, double price) {
+            instrument.price = price;
+            instrument.timestamp = timestamp;
+            instrument.id = id;
+            return instrument;
+        }
+
+
+        public double getLatestPrice(String instrumentId){
+            return instrument.getPrice();
+
+        }
+
+
+    }
+
+
+    ///KP : Java Spring Boot Executors ; Multi-threading
+    @Configuration
+    @EnableAsync
+    public static class KPAsyncConfig implements AsyncConfigurer {
+
+        @Override
+        public Executor getAsyncExecutor() {
+            ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+            executor.setCorePoolSize(5);
+            executor.setMaxPoolSize(10);
+            executor.setQueueCapacity(25);
+            executor.setThreadNamePrefix("KPMyAsyncTask-");
+            executor.initialize();
+            return executor;
+        }
+    }
+
+
+    public static class KPJavaStockPrice {
+
+        //private static Logger logger = LoggerFactory.getLogger(KPJavaSynechron.class);
+        private static int corePoolSize = 3;
+        private static int initialDelay = 5;
+        private static int period = 7;
+
+
+        //        public static void main(String[] args) {
+        //            ///System.out.println("KP : KPJavaStockPrice : StockPriceExecutorServiceThread ");
+        //            logger.info("KP : KPJavaStockPrice StockPriceExecutorServiceThread ");
+        //
+        //            beepForAnHour();
+        //        }
+
+
+        private static final ScheduledExecutorService stockPriceExecutorServiceThread = Executors.newScheduledThreadPool(corePoolSize);
+        // KPJavaStockPrice created with 3 threads
+
+        @SuppressWarnings("rawtypes")
+        public static void executeStockPriceForAnHour() {
+
+            final Runnable displayStockPrice = new Runnable() {
+
+
+                MarketDataAggregator aggregator = new MarketDataAggregator();
+                Instrument instrument = aggregator.onPriceUpdate("AAPL", 10000001L, 150.0);
+
+                public void run() {
+
+                    MarketDataAggregator aggregator = new MarketDataAggregator();
+                    Instrument instrument = aggregator.onPriceUpdate("AAPL", 10000003L, 151.0);
+
+                    ///System.out.println("displayStockPrice :: " + new Date() );
+                    //System.out.println("KP : KPJavaStockPrice : instrument - id : " + instrument.id +
+                    //        " timestamp : " + instrument.timestamp +
+                    //        " price : " + instrument.price +
+                    //        " LocalDateTime :  "  + LocalDateTime.now());
+                    logger.info("displayStockPrice :: " + new Date() );
+                    logger.info("KP : KPJavaStockPrice : instrument - id : " + instrument.id +
+                            " timestamp : " + instrument.timestamp +
+                            " price : " + instrument.price +
+                            " LocalDateTime :  "  + LocalDateTime.now());
+                }
+
+
+
+            }; // Creating a new runnable task which will be passed as an argument to scheduler
+
+            ScheduledFuture displayHandle4StockPriceAtFixedRate = stockPriceExecutorServiceThread.scheduleAtFixedRate(displayStockPrice, initialDelay, period, TimeUnit.SECONDS);
+            // Creates and executes a ScheduledFuture that becomes enabled after 5 seconds and gets executed with fixed rate of 5 seconds
+
+            ScheduledFuture displayHandle4StockPriceAtFixedDelay= stockPriceExecutorServiceThread.scheduleWithFixedDelay(displayStockPrice, initialDelay, period, TimeUnit.SECONDS);
+            // Creates and executes a ScheduledFuture that becomes enabled after 5 seconds and gets executed with fixed delay of 5 seconds
+
+            stockPriceExecutorServiceThread.schedule(new Runnable() {
+                MarketDataAggregator aggregator = new MarketDataAggregator();
+                Instrument instrument = aggregator.onPriceUpdate("AAPL", 10000003L, 151.0);
+
+                public void run() {
+                     System.out.println("KP : KPJavaStockPrice : instrument - id : " + instrument.id +
+                                    " timestamp : " + instrument.timestamp +
+                                    " price : " + instrument.price +
+                                    " LocalDateTime :  "  + LocalDateTime.now());
+                    displayHandle4StockPriceAtFixedRate.cancel(true); } // Attempts to cancel execution of task displayHandle4StockPriceAtFixedRate after one hour
+            }, 60 * 60, TimeUnit.SECONDS); // Creates and executes a one-shot action that becomes enabled after the given delay.
+
+            stockPriceExecutorServiceThread.schedule(new Runnable() {
+                MarketDataAggregator aggregator = new MarketDataAggregator();
+                Instrument instrument = aggregator.onPriceUpdate("AAPL", 10000003L, 149.0);
+
+                public void run() {
+                    System.out.println("KP : KPJavaStockPrice : instrument - id : " + instrument.id +
+                            " timestamp : " + instrument.timestamp +
+                            " price : " + instrument.price +
+                            " LocalDateTime :  "  + LocalDateTime.now());
+
+                    displayHandle4StockPriceAtFixedDelay.cancel(true); } // Attempts to cancel execution of task beeperHandleArFixedDelay after one hour
+            }, 60 * 60, TimeUnit.SECONDS);
+        }
+
+    }
+
+
+    public static class KPJavaScheduler {
+
+       //private static Logger logger = LoggerFactory.getLogger(KPJavaSpringBootApplication.class);
+        private static int corePoolSize = 3;
+        private static int initialDelay = 5;
+        private static int period = 7;
+
+
+        //        public static void main(String[] args) {
+        //            ///System.out.println("KP : KPJavaScheduler : ScheduledExecutorService ");
+        //            logger.info("KP : KPJavaScheduler ScheduledExecutorService ");
+        //
+        //            beepForAnHour();
+        //        }
+
+
+
+        private static final ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(corePoolSize);
+        // ScheduledExecutorService created with 3 threads
+
+        @SuppressWarnings("rawtypes")
+        public static void beepForAnHour() {
+
+            final Runnable beeper = new Runnable() {
+                public void run() {
+                    ///System.out.println("beep :: " + new Date() ); }
+                    logger.info("beep :: " + new Date() ); }
+
+            }; // Creating a new runnable task which will be passed as an argument to scheduler
+
+            ScheduledFuture beeperHandleAtFixedRate = scheduler.scheduleAtFixedRate(beeper, initialDelay, period, TimeUnit.SECONDS);
+            // Creates and executes a ScheduledFuture that becomes enabled after 5 seconds and gets executed with fixed rate of 5 seconds
+
+            ScheduledFuture beeperHandleArFixedDelay = scheduler.scheduleWithFixedDelay(beeper, initialDelay, period, TimeUnit.SECONDS);
+            // Creates and executes a ScheduledFuture that becomes enabled after 5 seconds and gets executed with fixed delay of 5 seconds
+
+            scheduler.schedule(new Runnable() {
+                public void run() { beeperHandleAtFixedRate.cancel(true); } // Attempts to cancel execution of task beeperHandleAtFixedRate after one hour
+            }, 60 * 60, TimeUnit.SECONDS); // Creates and executes a one-shot action that becomes enabled after the given delay.
+
+            scheduler.schedule(new Runnable() {
+                public void run() { beeperHandleArFixedDelay.cancel(true); } // Attempts to cancel execution of task beeperHandleArFixedDelay after one hour
+            }, 60 * 60, TimeUnit.SECONDS);
+        }
+
+    }
+
+
+
+}
