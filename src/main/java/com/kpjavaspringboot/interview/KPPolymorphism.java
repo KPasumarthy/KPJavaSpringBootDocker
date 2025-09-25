@@ -36,6 +36,7 @@ public class KPPolymorphism {
 			greatGrandChild.printSuperClassName();
 			System.out.print("Class Name : greatGrandChild.printDerivedClassName(); : " );
 			greatGrandChild.printDerivedClassName();
+			System.out.print("Class Name : GreatGreatGrandChild	java: cannot inherit from final com.kpjavaspringboot.interview.KPPolymorphism.GreatGrandChild ");
 
 		}
 
