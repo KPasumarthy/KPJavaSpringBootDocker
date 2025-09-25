@@ -19,6 +19,24 @@ public class KPPolymorphism {
 			System.out.print("Class Name : child.printDerivedClassName(); : " );
 			child.printDerivedClassName();
 
+			GrandChild grandChild = new GrandChild();
+			System.out.println("Class : child.className : " +  grandChild.className) ;
+			System.out.print("Super Class Name : " );
+			grandChild.print();
+			System.out.print("Class Name : grandChild.printSuperClassName(); : " );
+			grandChild.printSuperClassName();
+			System.out.print("Class Name : grandChild.printDerivedClassName(); : " );
+			grandChild.printDerivedClassName();
+
+			GreatGrandChild greatGrandChild = new GreatGrandChild();
+			System.out.println("Class : child.className : " +  greatGrandChild.className) ;
+			System.out.print("Super Class Name : " );
+			greatGrandChild.print();
+			System.out.print("Class Name : greatGrandChild.printSuperClassName(); : " );
+			greatGrandChild.printSuperClassName();
+			System.out.print("Class Name : greatGrandChild.printDerivedClassName(); : " );
+			greatGrandChild.printDerivedClassName();
+
 		}
 
 	static class Parent {
@@ -27,9 +45,8 @@ public class KPPolymorphism {
 		void print() {
 			System.out.println("Class from Child Derived from Parent : "+ className);
 		}
-
-
 	}
+
 	static class Child extends Parent {
 		public String className = "Child";
 
@@ -42,6 +59,41 @@ public class KPPolymorphism {
 		}
 	}
 
+	static class GrandChild extends Child {
+		public String className = "GrandChild";
 
+		void printSuperClassName() {
+			System.out.println("Class from parent : "+ super.className);
+		}
+
+		void printDerivedClassName() {
+			System.out.println("Class from parent : "+ className);
+		}
+	}
+
+	static final class GreatGrandChild extends GrandChild {
+		public String className = "GreatGrandChild";
+
+		void printSuperClassName() {
+			System.out.println("Class from parent : "+ super.className);
+		}
+
+		void printDerivedClassName() {
+			System.out.println("Class from parent : "+ className);
+		}
+	}
+
+	//	///KP : java: cannot inherit from final com.kpjavaspringboot.interview.KPPolymorphism.GreatGrandChild
+	//	static  class GreatGreatGrandChild extends GreatGrandChild {
+	//		public String className = "GreatGrandChild";
+	//
+	//		void printSuperClassName() {
+	//			System.out.println("Class from parent : "+ super.className);
+	//		}
+	//
+	//		void printDerivedClassName() {
+	//			System.out.println("Class from parent : "+ className);
+	//		}
+	//	}
 
 }
