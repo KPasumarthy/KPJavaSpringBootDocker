@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBootDocker - JavaSpringBoot RESTContoller GetPostMapping!" />
+    <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBootDocker - JavaSpringBoot RESTContoller GetPostMapping!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,37 +54,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.KPBinaryTree.executor": "Run",
-    "Application.KPBinaryTreeBFSDFS.executor": "Run",
-    "Application.KPFibonacci.executor": "Run",
-    "Application.KPFibonassi.executor": "Run",
-    "Application.KPJavaSynechron (1).executor": "Run",
-    "Application.KPJavaSynechron.executor": "Run",
-    "Application.KPMain.executor": "Run",
-    "Application.KPPolymorphism.executor": "Run",
-    "Application.KpjavaspringbootApplication.executor": "Run",
-    "Application.Test.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "JUnit.KPJavaSpringBootApplicationTests.contextLoads.executor": "Run",
-    "Maven.kpjavaspringboot [clean,install,compile].executor": "Run",
-    "Maven.kpjavaspringboot [package...].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG.KPFibonacciTest.executor": "Run",
-    "TestNG.KPFibonassiTest.executor": "Run",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "kpDevDocker",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Projects/IdeaProjects/kpjavaspringboot",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.KPBinaryTree.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPBinaryTreeBFSDFS.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPFibonacci.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPFibonassi.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPJavaSynechron (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPJavaSynechron.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KPPolymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;Application.KpjavaspringbootApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.KPJavaSpringBootApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.kpjavaspringboot [clean,install,compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.kpjavaspringboot [package...].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-git.push.result&quot;: &quot;&quot;,
+    &quot;Notification.DoNotAsk-git.push.result&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.KPFibonacciTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.KPFibonassiTest.executor&quot;: &quot;Run&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;kpDevDocker&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/IdeaProjects/kpjavaspringboot&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value=" mvn package spring-boot:repackage" />
@@ -291,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767122366433</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="KP : KPJavaSpringBootDocker - JavaSpringBoot RESTContoller GetPostMapping!">
+      <option name="closed" value="true" />
+      <created>1767122796476</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1767122796476</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
