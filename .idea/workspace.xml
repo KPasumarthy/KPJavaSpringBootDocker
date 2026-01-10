@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d482ddb-5ed8-4d68-9a9a-490b55401e12" name="Changes" comment="KP : KPJavaSpringBootDocker - JavaSpringBoot RESTContoller GetPostMapping!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KPCRUDController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kpjavaspringboot/KPCRUDController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,8 @@
   </component>
   <component name="RunManager" selected="Application.KpjavaspringbootApplication">
     <configuration name="KPFibonacci" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-24.0.1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.interview.KPFibonacci" />
       <module name="kpjavaspringboot" />
       <extension name="coverage">
@@ -135,7 +138,7 @@
       </method>
     </configuration>
     <configuration name="KpjavaspringbootApplication" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="ms-17" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-24.0.1" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.kpjavaspringboot.KpjavaspringbootApplication" />
       <module name="kpjavaspringboot" />
@@ -191,8 +194,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KPPolymorphism" />
         <item itemvalue="Application.KPFibonacci" />
+        <item itemvalue="Application.KPPolymorphism" />
         <item itemvalue="Application.KPJavaSynechron" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Docker.Dockerfile" />
